@@ -1,14 +1,15 @@
 /* XMing Games */
 .xming-games {
-    float: right;
     position: relative;
-    padding: 25px 10px;
+    width: 275px;
+	float: right;
+	padding: 25px 10px;
+	margin-bottom: 20px;
     background: #CCC;
     border: 3px solid black;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-	width: 275px;
 }
 
 .xming-games span.label {
