@@ -1,0 +1,3 @@
+[submodule "easter-bunnies"]
+	path = easter-bunnies
+	url = https://github.com/xming13/easter-bunnies
