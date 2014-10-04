@@ -1,3 +1,12 @@
 [submodule "easter-bunnies"]
 	path = easter-bunnies
 	url = https://github.com/xming13/easter-bunnies
+[submodule "catch-a-falling-star"]
+	path = catch-a-falling-star
+	url = https://github.com/xming13/catch-a-falling-star
+[submodule "spot-the-special-one"]
+	path = spot-the-special-one
+	url = https://github.com/xming13/spot-the-special-one
+[submodule "mushrooms"]
+	path = mushrooms
+	url = https://github.com/xming13/mushrooms
