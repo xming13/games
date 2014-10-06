@@ -1,6 +1,6 @@
 var xming_preload_images = [];
 
-for (var i = 0; i < 8; i++) {
+for (var i = 0; i < 10; i++) {
 	xming_preload_images[i] = new Image();
 }
 
@@ -12,3 +12,5 @@ xming_preload_images[4].src = "https://xming13.github.io/games/images/icons/icon
 xming_preload_images[5].src = "https://xming13.github.io/games/images/icons/icon-spot-the-special-one-hover.png";
 xming_preload_images[6].src = "https://xming13.github.io/games/images/icons/icon-mushrooms.png";
 xming_preload_images[7].src = "https://xming13.github.io/games/images/icons/icon-mushrooms-hover.png";
+xming_preload_images[8].src = "https://xming13.github.io/games/images/icons/icon-find-the-word.png";
+xming_preload_images[9].src = "https://xming13.github.io/games/images/icons/icon-find-the-word-hover.png";
