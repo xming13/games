@@ -1,7 +1,64 @@
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="css/xming-games.css" />
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+        *,:after,:before {
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+        }
+
+        /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+        .clearfix:before,.clearfix:after {
+            content:" ";
+            display:table;
+        }
+
+        .clearfix:after {
+            clear:both;
+        }
+
+        body,html {
+            font-size:100%;
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            background: #9401ff;
+            color: #fff;
+            padding: 0;
+            margin: 0 auto;
+            font-family: 'Lato', Calibri, Arial, sans-serif;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-	<h1>My game centre</h1>
+    <div class="container">
+    <h1>My game centre</h1>
+    <footer class="clearfix">
+        <div class="xming-games">
+            <a href="https://xming13.github.io/catch-a-falling-star" class="icon-catch-a-falling-star icon-game" target="_blank" data-info="Catch a Falling Star">
+            </a>
+            <a href="https://xming13.github.io/find-the-word" class="icon-find-the-word icon-game" target="_blank" data-info="Find The Word">
+            </a>
+            <a href="https://xming13.github.io/easter-bunnies" class="icon-easter-bunnies icon-game" target="_blank" data-info="Easter Bunnies">
+            </a>
+            <a href="https://xming13.github.io/spot-the-special-one" class="icon-spot-the-special-one icon-game icon-left" target="_blank" data-info="Spot The Special One">
+            </a>
+            <a href="https://xming13.github.io/mushrooms" class="icon-mushrooms icon-game icon-left" target="_blank" data-info="Mushrooms">
+            </a>
+        </div>
+    </footer>
+    </div>
+    <script src="js/xming-games.js"></script>
 </body>
 </html>
