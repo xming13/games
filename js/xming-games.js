@@ -61,7 +61,21 @@ XMing.Games = new function() {
     };
 };
 
-window.onload = function() {
-    XMing.Games.preloadImages();
-    XMing.Games.appendGameListHtml();
-};
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            if (oldonload) {
+                oldonload();
+            }
+            func();
+        }
+    }
+}
+
+addLoadEvent(function() {
+    XMing.preloadImages();
+    XMing.appendGameListHtml();
+});
