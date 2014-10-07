@@ -76,6 +76,6 @@ function addLoadEvent(func) {
 }
 
 addLoadEvent(function() {
-    XMing.preloadImages();
-    XMing.appendGameListHtml();
+    XMing.Games.preloadImages();
+    XMing.Games.appendGameListHtml();
 });
