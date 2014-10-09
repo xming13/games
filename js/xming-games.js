@@ -4,7 +4,7 @@ XMing.Games = new function() {
     var xming_preload_images = [];
 
     this.preloadImages = function() {
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 12; i++) {
             xming_preload_images[i] = new Image();
         }
 
@@ -18,6 +18,8 @@ XMing.Games = new function() {
         xming_preload_images[7].src = "https://xming13.github.io/games/images/icons/icon-mushrooms-hover.png";
         xming_preload_images[8].src = "https://xming13.github.io/games/images/icons/icon-find-the-word.png";
         xming_preload_images[9].src = "https://xming13.github.io/games/images/icons/icon-find-the-word-hover.png";
+        xming_preload_images[10].src = "https://xming13.github.io/games/images/icons/icon-follow-the-numbers.png";
+        xming_preload_images[11].src = "https://xming13.github.io/games/images/icons/icon-follow-the-numbers-hover.png";
     };
 
     this.appendGameListHtml = function() {
@@ -51,11 +53,17 @@ XMing.Games = new function() {
             aMushrooms.setAttribute("href", "https://xming13.github.io/mushrooms");
             aMushrooms.setAttribute("data-info", "Mushrooms");
 
+            var aFollowTheNumbers = document.createElement("a");
+            aFollowTheNumbers.className = "icon-follow-the-numbers icon-game icon-left";
+            aFollowTheNumbers.setAttribute("href", "https://xming13.github.io/follow-the-numbers");
+            aFollowTheNumbers.setAttribute("data-info", "Follow The Numbers");
+
             div.appendChild(aFallingStar);
             div.appendChild(aFindTheWord);
             div.appendChild(aEasterBunnies);
             div.appendChild(aSpotTheSpecialOne);
             div.appendChild(aMushrooms);
+            div.appendChild(aFollowTheNumbers);
             container.appendChild(div);
         }
     };

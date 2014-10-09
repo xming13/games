@@ -1,10 +1,10 @@
 /* XMing Games */
 .xming-games {
     position: relative;
-    width: 248px;
-	float: right;
-	padding: 25px 10px;
-	margin-bottom: 20px;
+    width: 290px;
+    float: right;
+    padding: 25px 10px;
+    margin-bottom: 20px;
     background: #CCC;
     border: 3px solid black;
     -webkit-border-radius: 20px;
@@ -65,29 +65,54 @@
     display: block;
 }
 
+/* Follow The Numbers */
+.xming-games .icon-follow-the-numbers {
+    border: 4px solid #ff0000;
+}
+
+.xming-games .icon-follow-the-numbers:before {
+    background: url(https://xming13.github.io/games/images/icons/icon-follow-the-numbers.png) 50% 50% no-repeat;
+    background-size: 50%;
+}
+
+.xming-games .icon-follow-the-numbers:after {
+    color: #ff9898;
+    background: #c60000;
+    width: 152px;
+}
+
+.xming-games .icon-follow-the-numbers:hover {
+    background: #ff9898;
+}
+
+.xming-games .icon-follow-the-numbers:hover:before {
+    background: url(https://xming13.github.io/games/images/icons/icon-follow-the-numbers-hover.png) 50% 50% no-repeat;
+    background-size: 50%;
+}
+
 /* Mushrooms */
 .xming-games .icon-mushrooms {
-	border: 4px solid #ff9900;
+    border: 4px solid #ff9900;
 }
 
 .xming-games .icon-mushrooms:before {
-	background: url(https://xming13.github.io/games/images/icons/icon-mushrooms.png) 50% 50% no-repeat;
-	background-size: 50%;
+    background: url(https://xming13.github.io/games/images/icons/icon-mushrooms.png) 50% 50% no-repeat;
+    background-size: 50%;
 }
 
 .xming-games .icon-mushrooms:after {
-	color: #ffd235;
-	background: #f57b00;
-	width: 88px;
+    color: #ffd235;
+    background: #f57b00;
+    width: 88px;
 }
 
 .xming-games .icon-mushrooms:hover {
-	background: #ffc737;
+    background: #ffc737;
 }
 
 .xming-games .icon-mushrooms:hover:before {
-	background: url(https://xming13.github.io/games/images/icons/icon-mushrooms-hover.png) 50% 50% no-repeat;
-	background-size: 50%;
+    background: url(https://xming13.github.io/games/images/icons/icon-mushrooms-hover.png) 50% 50% no-repeat;
+    background-size: 50%;
 }
 
 /* Spot The Special One */
