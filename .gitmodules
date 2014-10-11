@@ -10,3 +10,9 @@
 [submodule "mushrooms"]
 	path = mushrooms
 	url = https://github.com/xming13/mushrooms
+[submodule "find-the-word"]
+	path = find-the-word
+	url = https://github.com/xming13/find-the-word.git
+[submodule "follow-the-numbers"]
+	path = follow-the-numbers
+	url = https://github.com/xming13/follow-the-numbers.git
