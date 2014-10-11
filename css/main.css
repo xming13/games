@@ -1,0 +1,92 @@
+body {
+    padding-top: 50px;
+    background: #e5fdff;
+}
+.main {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+a.card:hover,
+a.card:focus {
+    text-decoration: none;
+}
+
+.media
+{
+    box-shadow:0px 0px 4px -2px #000;
+    margin: 20px 0;
+    padding:28px;
+    cursor: pointer;
+    color: #fff;
+}
+.media:hover {
+    box-shadow:0px 0px 12px -2px #000;
+}
+
+.media hr {
+    margin:8px auto;
+}
+
+.media-dark {
+    color: #666;
+}
+.media-dark hr {
+    border-top: 1px solid #666;
+}
+
+.dp {
+    height: 100px;
+    width: 100px;
+    border:8px solid #eee;
+    transition: all 0.2s ease-in-out;
+}
+.dp:hover {
+    border:2px solid #eee;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -webkit-font-smoothing:antialiased;
+}
+
+.follow-the-numbers {
+    background: rgba(255,0,0,0.7);
+}
+.follow-the-numbers:hover {
+    background: rgba(255,0,0,0.9);
+}
+
+.mushrooms {
+    background: rgba(255, 165, 0, 0.7);
+}
+.mushrooms:hover {
+    background: rgba(255, 165, 0, 0.9);
+}
+
+.spot-the-special-one {
+    background: rgba(255, 255, 0, 0.7);
+}
+.spot-the-special-one:hover {
+    background: rgba(255, 255, 0, 0.9);
+}
+
+.easter-bunnies {
+    background: rgba(0, 0, 255, 0.7);
+}
+.easter-bunnies:hover {
+    background: rgba(0, 0, 255, 0.9);
+}
+
+.find-the-word {
+    background: rgba(75, 0, 130, 0.7);
+}
+.find-the-word:hover {
+    background: rgba(75, 0, 130, 0.9);
+}
+
+.falling-star {
+    background: rgba(0, 0, 0, 0.7);
+}
+.falling-star:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
