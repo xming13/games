@@ -70,6 +70,13 @@ a.card:focus {
     background: rgba(255, 255, 0, 0.9);
 }
 
+.squirrel-and-acorn {
+    background: rgba(0, 255, 0, 0.7);
+}
+.squirrel-and-acorn:hover {
+    background: rgba(0, 255, 0, 0.9);
+}
+
 .easter-bunnies {
     background: rgba(0, 0, 255, 0.7);
 }
