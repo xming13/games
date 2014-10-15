@@ -1,7 +1,7 @@
 /* XMing Games */
 .xming-games {
     position: relative;
-    width: 290px;
+    width: 335px;
     float: right;
     padding: 25px 10px;
     margin-bottom: 20px;
@@ -137,6 +137,31 @@
 
 .xming-games .icon-spot-the-special-one:hover:before {
     background: url(https://xming13.github.io/games/images/icons/icon-spot-the-special-one-hover.png) 50% 50% no-repeat;
+    background-size: 50%;
+}
+
+/* Squirrel And Acorn */
+.xming-games .icon-squirrel-and-acorn {
+    border: 4px solid #0f0;
+}
+
+.xming-games .icon-squirrel-and-acorn:before {
+    background: url(https://xming13.github.io/games/images/icons/icon-squirrel-and-acorn.png) 50% 50% no-repeat;
+    background-size: 50%;
+}
+
+.xming-games .icon-squirrel-and-acorn:after {
+    color: #008f00;
+    background: #00ff00;
+    width: 140px;
+}
+
+.xming-games .icon-squirrel-and-acorn:hover {
+    background: #00cc00;
+}
+
+.xming-games .icon-squirrel-and-acorn:hover:before {
+    background: url(https://xming13.github.io/games//images/icons/icon-squirrel-and-acorn-hover.png) 50% 50% no-repeat;
     background-size: 50%;
 }
 
