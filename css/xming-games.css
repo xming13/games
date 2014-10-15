@@ -239,3 +239,18 @@
     background: url(https://xming13.github.io/games/images/icons/icon-catch-a-falling-star-hover.png) 50% 50% no-repeat;
     background-size: 50%;
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 540px) {
+    .xming-games {
+        float: none;
+        width: 284px;
+        padding: 25px 2px;
+    }
+
+    .xming-games .icon-game {
+        width: 35px;
+        height: 35px;
+    }
+}
