@@ -1,9 +1,9 @@
 var XMing = XMing || {};
 
-XMing.Games = new function() {
+XMing.Games = new function () {
     var xming_preload_images = [];
 
-    this.preloadImages = function() {
+    this.preloadImages = function () {
         for (var i = 0; i < 14; i++) {
             xming_preload_images[i] = new Image();
         }
@@ -24,54 +24,51 @@ XMing.Games = new function() {
         xming_preload_images[13].src = "https://xming13.github.io/games/images/icons/icon-squirrel-and-acorn-hover.png";
     };
 
-    this.appendGameListHtml = function() {
-        var container = document.querySelector(".xming-games");
-        for (var i = 0; i < container.length; i++) {
-            var div = container[i];
+    this.appendGameListHtml = function () {
+        var div = document.querySelector(".xming-games");
 
-            var aFallingStar = document.createElement("a");
-            aFallingStar.className = "icon-catch-a-falling-star icon-game";
-            aFallingStar.setAttribute("href", "https://xming13.github.io/catch-a-falling-star/");
-            aFallingStar.setAttribute("data-info", "Catch a Falling Star");
+        var aFallingStar = document.createElement("a");
+        aFallingStar.className = "icon-catch-a-falling-star icon-game";
+        aFallingStar.setAttribute("href", "https://xming13.github.io/catch-a-falling-star/");
+        aFallingStar.setAttribute("data-info", "Catch a Falling Star");
 
-            var aFindTheWord = document.createElement("a");
-            aFindTheWord.className = "icon-find-the-word icon-game";
-            aFindTheWord.setAttribute("href", "https://xming13.github.io/find-the-word/");
-            aFindTheWord.setAttribute("data-info", "Find The Word");
+        var aFindTheWord = document.createElement("a");
+        aFindTheWord.className = "icon-find-the-word icon-game";
+        aFindTheWord.setAttribute("href", "https://xming13.github.io/find-the-word/");
+        aFindTheWord.setAttribute("data-info", "Find The Word");
 
-            var aEasterBunnies = document.createElement("a");
-            aEasterBunnies.className = "icon-easter-bunnies icon-game";
-            aEasterBunnies.setAttribute("href", "https://xming13.github.io/easter-bunnies/");
-            aEasterBunnies.setAttribute("data-info", "Easter Bunnies");
+        var aEasterBunnies = document.createElement("a");
+        aEasterBunnies.className = "icon-easter-bunnies icon-game";
+        aEasterBunnies.setAttribute("href", "https://xming13.github.io/easter-bunnies/");
+        aEasterBunnies.setAttribute("data-info", "Easter Bunnies");
 
-            var aSquirrelAndAcorn = document.createElement("a");
-            aSquirrelAndAcorn.className = "icon-squirrel-and-acorn icon-game icon-left";
-            aSquirrelAndAcorn.setAttribute("href", "https://xming13.github.io/squirrel-and-acorn/");
-            aSquirrelAndAcorn.setAttribute("data-info", "Squirrel And Acorn");
+        var aSquirrelAndAcorn = document.createElement("a");
+        aSquirrelAndAcorn.className = "icon-squirrel-and-acorn icon-game icon-left";
+        aSquirrelAndAcorn.setAttribute("href", "https://xming13.github.io/squirrel-and-acorn/");
+        aSquirrelAndAcorn.setAttribute("data-info", "Squirrel And Acorn");
 
-            var aSpotTheSpecialOne = document.createElement("a");
-            aSpotTheSpecialOne.className = "icon-spot-the-special-one icon-game icon-left";
-            aSpotTheSpecialOne.setAttribute("href", "https://xming13.github.io/spot-the-special-one/");
-            aSpotTheSpecialOne.setAttribute("data-info", "Spot The Special One");
+        var aSpotTheSpecialOne = document.createElement("a");
+        aSpotTheSpecialOne.className = "icon-spot-the-special-one icon-game icon-left";
+        aSpotTheSpecialOne.setAttribute("href", "https://xming13.github.io/spot-the-special-one/");
+        aSpotTheSpecialOne.setAttribute("data-info", "Spot The Special One");
 
-            var aMushrooms = document.createElement("a");
-            aMushrooms.className = "icon-mushrooms icon-game icon-left";
-            aMushrooms.setAttribute("href", "https://xming13.github.io/mushrooms/");
-            aMushrooms.setAttribute("data-info", "Mushrooms");
+        var aMushrooms = document.createElement("a");
+        aMushrooms.className = "icon-mushrooms icon-game icon-left";
+        aMushrooms.setAttribute("href", "https://xming13.github.io/mushrooms/");
+        aMushrooms.setAttribute("data-info", "Mushrooms");
 
-            var aFollowTheNumbers = document.createElement("a");
-            aFollowTheNumbers.className = "icon-follow-the-numbers icon-game icon-left";
-            aFollowTheNumbers.setAttribute("href", "https://xming13.github.io/follow-the-numbers/");
-            aFollowTheNumbers.setAttribute("data-info", "Follow The Numbers");
+        var aFollowTheNumbers = document.createElement("a");
+        aFollowTheNumbers.className = "icon-follow-the-numbers icon-game icon-left";
+        aFollowTheNumbers.setAttribute("href", "https://xming13.github.io/follow-the-numbers/");
+        aFollowTheNumbers.setAttribute("data-info", "Follow The Numbers");
 
-            div.appendChild(aFallingStar);
-            div.appendChild(aFindTheWord);
-            div.appendChild(aEasterBunnies);
-            div.appendChild(aSquirrelAndAcorn);
-            div.appendChild(aSpotTheSpecialOne);
-            div.appendChild(aMushrooms);
-            div.appendChild(aFollowTheNumbers);
-        }
+        div.appendChild(aFallingStar);
+        div.appendChild(aFindTheWord);
+        div.appendChild(aEasterBunnies);
+        div.appendChild(aSquirrelAndAcorn);
+        div.appendChild(aSpotTheSpecialOne);
+        div.appendChild(aMushrooms);
+        div.appendChild(aFollowTheNumbers);
     };
 };
 
@@ -80,7 +77,7 @@ function addLoadEvent(func) {
     if (typeof window.onload != 'function') {
         window.onload = func;
     } else {
-        window.onload = function() {
+        window.onload = function () {
             if (oldonload) {
                 oldonload();
             }
@@ -89,7 +86,7 @@ function addLoadEvent(func) {
     }
 }
 
-addLoadEvent(function() {
+addLoadEvent(function () {
     XMing.Games.preloadImages();
     XMing.Games.appendGameListHtml();
 });
