@@ -25,10 +25,9 @@ XMing.Games = new function() {
     };
 
     this.appendGameListHtml = function() {
-        var container = document.getElementById("container");
-        if (container) {
-            var div = document.createElement("div");
-            div.className = "xming-games clearfix";
+        var container = document.querySelector(".xming-games");
+        for (var i = 0; i < container.length; i++) {
+            var div = container[i];
 
             var aFallingStar = document.createElement("a");
             aFallingStar.className = "icon-catch-a-falling-star icon-game";
@@ -72,8 +71,6 @@ XMing.Games = new function() {
             div.appendChild(aSpotTheSpecialOne);
             div.appendChild(aMushrooms);
             div.appendChild(aFollowTheNumbers);
-
-            container.appendChild(div);
         }
     };
 };
