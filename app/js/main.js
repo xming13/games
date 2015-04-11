@@ -121,6 +121,7 @@ XMing.EggCollection = new function() {
         }
 
         if (_.every(userData.easterEgg)) {
+            var self = this;
             var postingInProgress = false;
             swal({
                 title: 'Congratulations!',
