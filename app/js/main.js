@@ -125,7 +125,8 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Congratulations!',
                 text: 'You have collected all the eggs!\nWrite your name here!',
-                imageUrl: 'images/love.png'
+                imageUrl: 'images/love.png',
+                type: 'input'
             }, function(playerName) {
                 if (playerName == "") {
                     swal.showInputError("You need to write something! A nickname is fine too!");
