@@ -21,13 +21,13 @@ XMing.EggCollection = new function() {
             imgName: 'unknown'
         });
         $('.egg-container').html('');
-        $('.egg-container').append(userData.easterEgg.followTheNumbers ? imgTemplate({
+        $('.egg-container').append(userData.easterEgg.numbers ? imgTemplate({
             imgName: 'red'
         }) : imgUnknown);
         $('.egg-container').append(userData.easterEgg.mushrooms ? imgTemplate({
             imgName: 'orange'
         }) : imgUnknown);
-        $('.egg-container').append(userData.easterEgg.spotTheSpecialOne ? imgTemplate({
+        $('.egg-container').append(userData.easterEgg.specialOne ? imgTemplate({
             imgName: 'yellow'
         }) : imgUnknown);
         $('.egg-container').append(userData.easterEgg.squirrel ? imgTemplate({
@@ -36,7 +36,7 @@ XMing.EggCollection = new function() {
         $('.egg-container').append(userData.easterEgg.allGames ? imgTemplate({
             imgName: 'blue'
         }) : imgUnknown);
-        $('.egg-container').append(userData.easterEgg.findTheWord ? imgTemplate({
+        $('.egg-container').append(userData.easterEgg.word ? imgTemplate({
             imgName: 'purple'
         }) : imgUnknown);
         $('.egg-container').append(userData.easterEgg.allLeaderboard ? imgTemplate({
@@ -194,9 +194,9 @@ XMing.EggCollection = new function() {
             easterEgg: {
                 allGames: false,
                 allLeaderboard: false,
-                findTheWord: false,
-                followTheNumbers: false,
-                spotTheSpecialOne: false,
+                word: false,
+                numbers: false,
+                specialOne: false,
                 mushrooms: false,
                 squirrel: false
             },
