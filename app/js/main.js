@@ -7,8 +7,14 @@ XMing.EggCollection = new function() {
     this.init = function() {
         userData = this.loadData();
 
+        this.preloadImage();
         this.setupEggs();
         this.checkEggs();
+    };
+
+    this.preloadImage = function() {
+        var imgLove = new Image();
+        imgLove.src = "images/love.png";
     };
 
     this.setupEggs = function() {
