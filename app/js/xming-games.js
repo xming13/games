@@ -1,9 +1,9 @@
 var XMing = XMing || {};
 
-XMing.Games = new function () {
+XMing.Games = new function() {
     var xming_preload_images = [];
 
-    this.preloadImages = function () {
+    this.preloadImages = function() {
         for (var i = 0; i < 14; i++) {
             xming_preload_images[i] = new Image();
         }
@@ -24,7 +24,7 @@ XMing.Games = new function () {
         xming_preload_images[13].src = "https://xming13.github.io/games/images/icons/icon-squirrel-and-acorn-hover.png";
     };
 
-    this.appendGameListHtml = function () {
+    this.appendGameListHtml = function() {
         var div = document.querySelector(".xming-games");
 
         var aFallingStar = document.createElement("a");
@@ -77,7 +77,7 @@ function addLoadEvent(func) {
     if (typeof window.onload != 'function') {
         window.onload = func;
     } else {
-        window.onload = function () {
+        window.onload = function() {
             if (oldonload) {
                 oldonload();
             }
@@ -86,7 +86,7 @@ function addLoadEvent(func) {
     }
 }
 
-addLoadEvent(function () {
+addLoadEvent(function() {
     XMing.Games.preloadImages();
     XMing.Games.appendGameListHtml();
 });
