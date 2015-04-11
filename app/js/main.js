@@ -55,7 +55,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Red egg',
                 text: 'Finished the puzzle in the game over screen of Follow The Numbers',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#F00'
             });
         });
@@ -63,7 +63,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Orange egg',
                 text: 'Discovered Pig King and Wild boar in the game over screen of Mushrooms',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#FF7F00'
             });
         });
@@ -71,7 +71,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Yellow egg',
                 text: 'Finished the puzzle in the game over screen of Spot The Special One',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#FF0'
             });
         });
@@ -79,7 +79,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Green egg',
                 text: 'Clicked on the calculator link in Squirrel And Acorn',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#0F0'
             });
         });
@@ -87,7 +87,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Blue egg',
                 text: 'Played all games at least once',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#00F'
             });
         });
@@ -95,7 +95,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Purple egg',
                 text: 'Finished the puzzle in the game over screen of Find The Word',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#7F00FF'
             });
         });
@@ -103,7 +103,7 @@ XMing.EggCollection = new function() {
             swal({
                 title: 'Ninja egg',
                 text: 'Visited leaderboard screen for all games',
-                imageUrl: $(this).src,
+                imageUrl: this.src,
                 confirmButtonColor: '#000'
             });
         });
