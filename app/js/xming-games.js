@@ -27,10 +27,10 @@ XMing.Games = new function() {
     this.appendGameListHtml = function() {
         var div = document.querySelector(".xming-games");
 
-        var aFallingStar = document.createElement("a");
-        aFallingStar.className = "icon-catch-a-falling-star icon-game";
-        aFallingStar.setAttribute("href", "https://xming13.github.io/catch-a-falling-star/");
-        aFallingStar.setAttribute("data-info", "Catch a Falling Star");
+        //        var aFallingStar = document.createElement("a");
+        //        aFallingStar.className = "icon-catch-a-falling-star icon-game";
+        //        aFallingStar.setAttribute("href", "https://xming13.github.io/catch-a-falling-star/");
+        //        aFallingStar.setAttribute("data-info", "Catch a Falling Star");
 
         var aFindTheWord = document.createElement("a");
         aFindTheWord.className = "icon-find-the-word icon-game";
@@ -43,7 +43,7 @@ XMing.Games = new function() {
         aEasterBunnies.setAttribute("data-info", "Easter Bunnies");
 
         var aSquirrelAndAcorn = document.createElement("a");
-        aSquirrelAndAcorn.className = "icon-squirrel-and-acorn icon-game icon-left";
+        aSquirrelAndAcorn.className = "icon-squirrel-and-acorn icon-game";
         aSquirrelAndAcorn.setAttribute("href", "https://xming13.github.io/squirrel-and-acorn/");
         aSquirrelAndAcorn.setAttribute("data-info", "Squirrel And Acorn");
 
@@ -62,7 +62,7 @@ XMing.Games = new function() {
         aFollowTheNumbers.setAttribute("href", "https://xming13.github.io/follow-the-numbers/");
         aFollowTheNumbers.setAttribute("data-info", "Follow The Numbers");
 
-        div.appendChild(aFallingStar);
+        //        div.appendChild(aFallingStar);
         div.appendChild(aFindTheWord);
         div.appendChild(aEasterBunnies);
         div.appendChild(aSquirrelAndAcorn);

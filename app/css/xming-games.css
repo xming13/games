@@ -1,7 +1,7 @@
 /* XMing Games */
 .xming-games {
     position: relative;
-    width: 335px;
+    width: 290px;
     float: right;
     padding: 25px 10px;
     margin-bottom: 20px;
@@ -245,8 +245,8 @@ and (min-device-width : 320px)
 and (max-device-width : 540px) {
     .xming-games {
         float: none;
-        width: 284px;
-        padding: 30px 2px;
+        width: 260px;
+        padding: 30px 10px;
         margin: 0 auto 20px;
     }
 
