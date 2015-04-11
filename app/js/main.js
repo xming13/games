@@ -15,9 +15,31 @@ XMing.EggCollection = new function() {
             return;
         }
 
-        _.each(userData.easterEgg, function(value, key) {
-            console.log(key + ': ' + value);
+        var imgTemplate = _.template('<img class="egg" src="images/eggs/<%= imgName %>-egg.png"/>');
+        var imgLocked = imgTemplate({
+            imgName: 'locked'
         });
+        $('.egg-container').append(userData.easterEgg.followTheNumbers ? imgTemplate({
+            imgName: 'red'
+        }) : imgLocked);
+        $('.egg-container').append(userData.easterEgg.mushrooms ? imgTemplate({
+            imgName: 'orange'
+        }) : imgLocked);
+        $('.egg-container').append(userData.easterEgg.spotTheSpecialOne ? imgTemplate({
+            imgName: 'yellow'
+        }) : imgLocked);
+        $('.egg-container').append(userData.easterEgg.squirrel ? imgTemplate({
+            imgName: 'green'
+        }) : imgLocked);
+        $('.egg-container').append(userData.easterEgg.allGames ? imgTemplate({
+            imgName: 'blue'
+        }) : imgLocked);
+        $('.egg-container').append(userData.easterEgg.findTheWord ? imgTemplate({
+            imgName: 'purple'
+        }) : imgLocked);
+        $('.egg-container').append(userData.easterEgg.allLeaderboard ? imgTemplate({
+            imgName: 'ninja'
+        }) : imgLocked);
     }
 
     // Local storage
