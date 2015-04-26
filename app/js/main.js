@@ -150,12 +150,14 @@ XMing.EggCollection = new function() {
                     }).success(function(data) {
                         swal("Congratulations!", "You are the " + data.rank_text + " one to collect all the eggs!", "success");
                         userData.collectAll = true;
+                        userData.username = playerName;
                         self.saveData(userData);
                     }).fail(function() {
                         swal("Oops...", "Something went wrong!", "error");
                     });
                 }
             });
+            $('.sweet-alert input[type=text]:first').val(userData.username);
         }
     };
 
@@ -216,6 +218,7 @@ XMing.EggCollection = new function() {
             },
             collectAll: false,
             uid: uid,
+            username: '',
             version: VERSION_NUMBER
         };
 
