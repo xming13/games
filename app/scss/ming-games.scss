@@ -1,0 +1,136 @@
+@import '../../node_modules/mfb/src/mfb';
+
+.overlay.active {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -80px;
+}
+
+.nav-bar {
+    position: relative;
+    min-height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.game-name {
+    line-height: 60px;
+    font-size: 24px;
+    padding-left: 12px;
+    float: left;
+}
+
+footer {
+    height: 80px;
+    padding: 20px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    color: #777;
+    overflow: hidden;
+}
+
+.fb-like {
+    margin: 10px 0;
+    float: left;
+}
+
+/* Material floating button customisation */
+.mfb-component, .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br {
+    height: 56px;
+    margin: 12px;
+}
+
+.icon-game {
+    font-size: 28px;
+    color: #303030;
+}
+
+.mfb-component__button--main {
+    background: url(../images/mfb/icon-games.png);
+    background-repeat: no-repeat;
+}
+
+.mfb-component__button--child {
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 70%;
+}
+
+.mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(5),
+.mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(5) {
+    -webkit-transform: translateY(-350px);
+    transform: translateY(-350px);
+}
+
+.mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(6),
+.mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(6) {
+    -webkit-transform: translateY(-420px);
+    transform: translateY(-420px);
+}
+
+.button--follow-the-numbers {
+    background-image: url(../images/mfb/icon-follow-the-numbers.png);
+    background-color: #ad0000;
+    border: 6px solid #ff0000;
+}
+
+.button--mushrooms {
+    background-image: url(../images/mfb/icon-mushrooms.png);
+    background-color: #ffc737;
+    border: 6px solid #ff9900;
+}
+
+.button--spot-the-special-one {
+    background-image: url(../images/mfb/icon-spot-the-special-one.png);
+    background-color: #b2b271;
+    border: 6px solid #ff0;
+}
+
+.button--squirrel-and-acorn {
+    background-image: url(../images/mfb/icon-squirrel-and-acorn.png);
+    background-color: #00cc00;
+    border: 6px solid #0f0;
+}
+
+.button--easter-bunnies {
+    background-image: url(../images/mfb/icon-easter-bunnies.png);
+    background-color: #54BFFF;
+    border: 6px solid #104AC5;
+}
+
+.button--find-the-word {
+    background-image: url(../images/mfb/icon-find-the-word.png);
+    background-color: #9401ff;
+    border: 6px solid #4b0082;
+}
+
+@media(min-width: 320px) and (max-width: 540px) {
+    .wrap {
+        margin: 0 auto -40px;
+    }
+
+    footer {
+        height: 40px;
+        padding: 0 20px;
+    }
+}

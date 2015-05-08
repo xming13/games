@@ -35,7 +35,8 @@ module.exports = function (grunt) {
         cssmin: {
             games: {
                 files: {
-                    'css/xming-games.min.css': ['app/css/xming-games.css']
+                    'css/xming-games.min.css': ['app/css/xming-games.css'],
+                    'css/ming-games.min.css': ['app/css/ming-games.css']
                 }
             }
         }
