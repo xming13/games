@@ -652,14 +652,13 @@
 .nav-bar {
   position: relative;
   min-height: 60px;
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(0, 0, 0, 0.1); }
 
 .logo {
   float: left; }
-
-.logo img {
-  height: 60px;
-  width: 60px; }
+  .logo img {
+    height: 60px;
+    width: 60px; }
 
 .game-name {
   line-height: 60px;
@@ -667,11 +666,20 @@
   padding-left: 12px;
   float: left; }
 
+#container {
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 footer {
   height: 80px;
   padding: 20px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   color: #777;
   overflow: hidden; }
 
@@ -740,6 +748,14 @@ footer {
 @media (min-width: 320px) and (max-width: 540px) {
   .wrap {
     margin: 0 auto -40px; }
+
+  #container {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
   footer {
     height: 40px;
