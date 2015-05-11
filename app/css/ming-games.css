@@ -692,14 +692,15 @@ footer {
   height: 56px;
   margin: 12px; }
 
+.mfb-component__icon, .mfb-component__main-icon--active,
+.mfb-component__main-icon--resting, .mfb-component__child-icon, .mfb-component__main-icon--active, .mfb-component__main-icon--resting, .mfb-component__child-icon {
+  line-height: 44px; }
+
 .icon-game {
   font-size: 28px;
   color: #303030; }
 
-.mfb-component__button--main {
-  background: url(../images/mfb/icon-games.png);
-  background-repeat: no-repeat; }
-
+.mfb-component__button--main,
 .mfb-component__button--child {
   background-repeat: no-repeat;
   background-position: 8px;
@@ -714,6 +715,11 @@ footer {
 .mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(6) {
   -webkit-transform: translateY(-420px);
   transform: translateY(-420px); }
+
+.mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li.mfb-component__list-item--horizontal,
+.mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li.mfb-component__list-item--horizontal {
+  -webkit-transform: translateX(-70px) translateY(0);
+  transform: translateX(-70px) translateY(0); }
 
 .button--follow-the-numbers {
   background-image: url(../images/mfb/icon-follow-the-numbers.png);
@@ -744,6 +750,10 @@ footer {
   background-image: url(../images/mfb/icon-find-the-word.png);
   background-color: #9401ff;
   border: 6px solid #4b0082; }
+
+.button--games {
+  background: url(../images/mfb/icon-games.png);
+  background-repeat: no-repeat; }
 
 @media (min-width: 320px) and (max-width: 540px) {
   .wrap {
