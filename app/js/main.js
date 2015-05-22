@@ -127,7 +127,8 @@ XMing.EggCollection = new function() {
                 title: 'Congratulations!',
                 text: 'You have collected all the eggs!\nWrite your name here!',
                 imageUrl: 'images/love.png',
-                type: 'input'
+                type: 'input',
+                inputValue: userData.username
             }, function(playerName) {
                 if (playerName == "") {
                     swal.showInputError("You need to write something! A nickname is fine too!");
@@ -157,7 +158,6 @@ XMing.EggCollection = new function() {
                     });
                 }
             });
-            $('.sweet-alert input[type=text]:first').val(userData.username);
         }
     };
 
