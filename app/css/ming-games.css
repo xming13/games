@@ -685,16 +685,14 @@ footer {
 
 .fb-like {
   margin: 10px 0;
-  float: left; }
+  float: left;
+  height: 20px;
+  overflow: hidden !important; }
 
 /* Material floating button customisation */
 .mfb-component, .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br, .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br {
   height: 56px;
   margin: 12px; }
-
-.mfb-component__icon, .mfb-component__main-icon--active,
-.mfb-component__main-icon--resting, .mfb-component__child-icon, .mfb-component__main-icon--active, .mfb-component__main-icon--resting, .mfb-component__child-icon {
-  line-height: 44px; }
 
 .icon-game {
   font-size: 28px;

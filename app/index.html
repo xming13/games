@@ -34,11 +34,12 @@
   <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <!-- build:css css/app.css -->
-  <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="../node_modules/animate.css/animate.min.css"/>
   <link rel="stylesheet" type="text/css" href="../node_modules/sweetalert/dist/sweetalert.css"/>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/ming-games.css"/>
   <!-- endbuild -->
 
   <script>
@@ -60,149 +61,96 @@
 </head>
 
 <body>
-<div id="container" class="container">
 
-  <div class="main">
-    <h1>Games</h1>
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <p class="lead">Collect all the hidden eggs in the games!</p>
-
-    <div class="egg-container">
-      <img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/>
+<div class="wrap">
+  <div class="nav-bar">
+    <div class="navbar-brand">
+      <div class="logo">
+        <a href="."><img src="images/games.png"/></a>
+      </div>
+      <div class="game-name">
+        Games
+      </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <a href="http://xming13.github.io/follow-the-numbers/" class="card">
-          <div class="media follow-the-numbers">
-            <div class="pull-left">
-              <img class="media-object dp img-circle" src="images/games/follow-the-numbers.png"/>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Follow The Numbers</h4>
-              <hr>
-
-              <span class="label label-default">HTML5/CSS3</span>
-              <span class="label label-default">Javascript</span>
-            </div>
-          </div>
-        </a>
+  </div>
+  <div id="container">
+    <div class="main-content">
+      <div class="panel-container">
+        <div class="egg-container"><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/><img class="egg"/></div>
+        <div class="color-block follow-the-numbers"></div>
+        <div class="color-block mushrooms"></div>
+        <div class="color-block spot-the-special-one"></div>
+        <div class="color-block squirrel-and-acorn"></div>
+        <div class="color-block easter-bunnies"></div>
+        <div class="color-block find-the-word"></div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <a href="http://xming13.github.io/mushrooms/" class="card">
-          <div class="media mushrooms">
-            <div class="pull-left">
-              <img class="media-object dp img-circle" src="images/games/mushroom.png"/>
-            </div>
-
-            <div class="media-body">
-              <h4 class="media-heading">Mushrooms</h4>
-              <hr>
-
-              <span class="label label-default">HTML5/CSS3</span>
-              <span class="label label-default">Javascript</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <a href="http://xming13.github.io/spot-the-special-one/" class="card">
-          <div class="media spot-the-special-one media-dark">
-            <div class="pull-left">
-              <img class="media-object dp img-circle" src="images/games/spot-the-special-one.png"/>
-            </div>
-
-            <div class="media-body">
-              <h4 class="media-heading">Spot The Special One</h4>
-              <hr>
-
-              <span class="label label-default">HTML5/CSS3</span>
-              <span class="label label-default">Javascript</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <a href="http://xming13.github.io/squirrel-and-acorn/" class="card">
-          <div class="media squirrel-and-acorn">
-            <div class="pull-left">
-              <img class="media-object dp img-circle" src="images/games/squirrel-and-acorn.png"/>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Squirrel And Acorn</h4>
-              <hr>
-
-              <span class="label label-default">HTML5/CSS3</span>
-              <span class="label label-default">Javascript</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <a href="http://xming13.github.io/easter-bunnies/" class="card">
-          <div class="media easter-bunnies">
-            <div class="pull-left">
-              <img class="media-object dp img-circle" src="images/games/easter-bunnies.png"/>
-            </div>
-
-            <div class="media-body">
-              <h4 class="media-heading">Easter Bunnies</h4>
-              <hr>
-
-              <span class="label label-default">HTML5/CSS3</span>
-              <span class="label label-default">Javascript</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <a href="http://xming13.github.io/find-the-word/" class="card">
-          <div class="media find-the-word">
-            <div class="pull-left">
-              <img class="media-object dp img-circle" src="images/games/find-the-word.png"/>
-            </div>
-
-            <div class="media-body">
-              <h4 class="media-heading">Find The Word</h4>
-              <hr>
-
-              <span class="label label-default">HTML5/CSS3</span>
-              <span class="label label-default">Javascript</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">-->
-        <!--<a href="http://xming13.github.io/catch-a-falling-star/" class="card">-->
-          <!--<div class="media falling-star">-->
-            <!--<div class="pull-left">-->
-              <!--<img class="media-object dp img-circle" src="images/games/falling-star.png"/>-->
-            <!--</div>-->
-
-            <!--<div class="media-body">-->
-              <!--<h4 class="media-heading">Catch A Falling Star</h4>-->
-              <!--<hr>-->
-
-              <!--<span class="label label-default">HTML5/CSS3</span>-->
-              <!--<span class="label label-default">Javascript</span>-->
-              <!--<span class="label label-default">canvas</span>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</a>-->
-      <!--</div>-->
     </div>
   </div>
-
 </div>
-<!-- /.container -->
+<footer>
+  <div class="fb-like" data-url="http://xming13.github.io/games" data-layout="button_count"
+       data-action="like" data-show-faces="false" data-share="true"></div>
+  <div class="overlay"></div>
+  <div class="game-list">
+    <ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover" data-mfb-state="closed">
+      <li class="mfb-component__wrap">
+        <a class="mfb-component__button--main button--games">
+          <i class="mfb-component__main-icon--resting icon-game fa fa-gamepad"></i>
+          <i class="mfb-component__main-icon--active icon-game fa fa-close"></i>
+        </a>
+        <ul class="mfb-component__list">
+          <li>
+            <a href="http://xming13.github.io/find-the-word/" data-mfb-label="Find The Word" class="mfb-component__button--child button--find-the-word">
+            </a>
+          </li>
+          <li>
+            <a href="http://xming13.github.io/easter-bunnies/" data-mfb-label="Easter Bunnies" class="mfb-component__button--child button--easter-bunnies">
+            </a>
+          </li>
+          <li>
+            <a href="http://xming13.github.io/squirrel-and-acorn/" data-mfb-label="Squirrel and acorn" class="mfb-component__button--child button--squirrel-and-acorn">
+            </a>
+          </li>
+          <li>
+            <a href="http://xming13.github.io/spot-the-special-one/" data-mfb-label="Spot The Special One" class="mfb-component__button--child button--spot-the-special-one">
+            </a>
+          </li>
+          <li>
+            <a href="http://xming13.github.io/mushrooms/" data-mfb-label="Mushrooms" class="mfb-component__button--child button--mushrooms">
+            </a>
+          </li>
+          <li>
+            <a href="http://xming13.github.io/follow-the-numbers/" data-mfb-label="Follow the numbers" class="mfb-component__button--child button--follow-the-numbers">
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</footer>
 
 <!-- build:js js/app.js -->
+<script src="../node_modules/mfb/src/lib/modernizr.touch.js"></script>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../node_modules/underscore/underscore-min.js"></script>
 <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../node_modules/mfb/src/mfb.js"></script>
+<script src="js/Event.js"></script>
+<script src="js/ColorSphereBackground.js"></script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
+
 
 </body>
 

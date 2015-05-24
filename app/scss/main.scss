@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Reset */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Lato,Calibri,Arial,sans-serif;
+}
+
+body {
+  background: #CED3D3;
+  color: #fff;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.egg-container {
+  display: inline-block;
+  height: 76px;
+  border: 4px solid black;
+  background: #FFF;
+}
+
+.egg {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  background: #DDD;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.color-block {
+  display: block;
+  box-shadow:0px 0px 4px -2px #000;
+  margin: 20px 0;
+  padding:28px;
+
+  &:hover {
+    //box-shadow:0px 0px 12px -2px #000;
+  }
+}
+
+.follow-the-numbers {
+  background: rgba(255,0,0,0.7);
+
+  &:hover {
+    background: rgba(255,0,0,0.9);
+  }
+}
+
+.mushrooms {
+  background: rgba(255, 165, 0, 0.7);
+
+  &:hover {
+    background: rgba(255, 165, 0, 0.9);
+  }
+}
+
+.spot-the-special-one {
+  background: rgba(255, 255, 0, 0.7);
+
+  &:hover {
+    background: rgba(255, 255, 0, 0.9);
+  }
+}
+
+.squirrel-and-acorn {
+  background: rgba(0, 255, 0, 0.7);
+
+  &:hover {
+    background: rgba(0, 255, 0, 0.9);
+  }
+}
+
+.easter-bunnies {
+  background: rgba(0, 0, 255, 0.7);
+
+  &:hover {
+    background: rgba(0, 0, 255, 0.9);
+  }
+}
+
+.find-the-word {
+  background: rgba(75, 0, 130, 0.7);
+
+  &:hover {
+    background: rgba(75, 0, 130, 0.9);
+  }
+}
+
+.falling-star {
+  background: rgba(0, 0, 0, 0.7);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (min-device-width: 320px)
+and (max-device-width: 540px) {
+  .egg-container {
+    height: 52px;
+  }
+
+  .egg {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+  }
+
+  .color-block {
+    padding: 20px;
+  }
+}

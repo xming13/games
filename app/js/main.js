@@ -7,6 +7,14 @@ XMing.EggCollection = new function() {
     this.init = function() {
         userData = this.loadData();
 
+        $(".mfb-component__button--main").click(function() {
+            if ($(this).parent().parent().attr('data-mfb-state') === "open") {
+                $(".overlay").addClass("active");
+            } else {
+                $(".overlay").removeClass("active");
+            }
+        });
+
         this.preloadImage();
         this.setupEggs();
         this.checkEggs();
@@ -68,7 +76,7 @@ XMing.EggCollection = new function() {
         $('.orange-egg').click(function() {
             swal({
                 title: 'Orange egg',
-                text: 'Discovered Pig King and Wild boar in the game over screen of Mushrooms',
+                text: 'Discovered Pig King and Wild Boar in the game over screen of Mushrooms',
                 imageUrl: this.src,
                 confirmButtonColor: '#FF7F00'
             });
@@ -84,7 +92,7 @@ XMing.EggCollection = new function() {
         $('.green-egg').click(function() {
             swal({
                 title: 'Green egg',
-                text: 'Clicked on the calculator link in Squirrel And Acorn',
+                text: 'Clicked on fun fact in Squirrel And Acorn',
                 imageUrl: this.src,
                 confirmButtonColor: '#0F0'
             });
@@ -92,7 +100,7 @@ XMing.EggCollection = new function() {
         $('.blue-egg').click(function() {
             swal({
                 title: 'Blue egg',
-                text: 'Played all games at least once',
+                text: 'Played all games',
                 imageUrl: this.src,
                 confirmButtonColor: '#00F'
             });
@@ -108,7 +116,7 @@ XMing.EggCollection = new function() {
         $('.ninja-egg').click(function() {
             swal({
                 title: 'Ninja egg',
-                text: 'Visited leaderboard screen for all games',
+                text: 'Visited leaderboard for all games',
                 imageUrl: this.src,
                 confirmButtonColor: '#000'
             });

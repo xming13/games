@@ -28,14 +28,13 @@ module.exports = function (grunt) {
         uglify: {
             games: {
                 files: {
-                    'js/xming-games.min.js': ['app/js/xming-games.js']
+
                 }
             }
         },
         cssmin: {
             games: {
                 files: {
-                    'css/xming-games.min.css': ['app/css/xming-games.css'],
                     'css/ming-games.min.css': ['app/css/ming-games.css']
                 }
             }
