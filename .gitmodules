@@ -1,18 +1,18 @@
 [submodule "easter-bunnies"]
 	path = easter-bunnies
-	url = https://github.com/xming13/easter-bunnies
+	url = git@github.com:xming13/easter-bunnies
 [submodule "spot-the-special-one"]
 	path = spot-the-special-one
-	url = https://github.com/xming13/spot-the-special-one
+	url = git@github.com:xming13/spot-the-special-one
 [submodule "mushrooms"]
 	path = mushrooms
-	url = https://github.com/xming13/mushrooms
+	url = git@github.com:xming13/mushrooms
 [submodule "find-the-word"]
 	path = find-the-word
-	url = https://github.com/xming13/find-the-word.git
+	url = git@github.com:xming13/find-the-word.git
 [submodule "follow-the-numbers"]
 	path = follow-the-numbers
-	url = https://github.com/xming13/follow-the-numbers.git
+	url = git@github.com:xming13/follow-the-numbers.git
 [submodule "squirrel-and-acorn"]
 	path = squirrel-and-acorn
-	url = https://github.com/xming13/squirrel-and-acorn
+	url = git@github.com:xming13/squirrel-and-acorn
